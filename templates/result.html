@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Complaint Successful</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="/static/css/home.css" rel="stylesheet" /> -->
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-2 my-3">Thank You!</h1>
+      <h1 class="display-4 my-4">
+        Your complaint has been registered successfully!
+      </h1>
+      <h2 class="display-5 my-5">Complaint Type: {{complaint_type}} </h2>
+      <p class="lead">
+        We'll forward your complaint to the concerned department, and your issue
+        should soon be resolved 😄
+      </p>
+      <!-- <hr> -->
+      <p class="mt-4 pt-4">Have another complaint?</p>
+      <p class="lead">
+        <a class="btn btn-primary" href="{{url_for('homepage')}}" role="button"
+          >Send it to us</a
+        >
+      </p>
+    </div>
+    <footer>
+      <p class="text-muted text-center mt-5">
+        © Anmol Bansal Ankit Kumar
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>

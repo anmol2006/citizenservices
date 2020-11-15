@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grievance Redressal</title>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Grievance Redressal</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
 
-  <!-- Custom styles for this template -->
-  <link href="/static/css/home.css" rel="stylesheet" />
-</head>
+    <!-- Custom styles for this template -->
+    <link href="/static/css/home.css" rel="stylesheet" />
+  </head>
 
-<body>
-  <form class="form-signin" action="{{url_for('getImg')}}" method="POST" enctype="multipart/form-data">
-    <div class="text-center mb-4">
-      <img class="mb-4" src="/static/icon.png" alt="icon-img" width="120" height="120" />
-      <h1 class="h3 mb-3 font-weight-normal">
-        Welcome to our Grievance Redressal System
-      </h1>
-      <p>
-        Here you can send us the photo of your problem, and we'll take care of
-        it for you!
+  <body>
+    <form
+      class="form-signin"
+      action="{{url_for('getImg')}}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <div class="text-center mb-4">
+        <img
+          class="mb-4"
+          src="/static/icon.png"
+          alt="icon-img"
+          width="120"
+          height="120"
+        />
+        <h1 class="h3 mb-3 font-weight-normal">
+          Welcome to our Civic Amenities Grievance Redressal System
+        </h1>
+        <p>Are you facing any issues regarding garbage disposal or potholes in your area?</p>
+        <p>
+          Here you can send us the photo of your problem, and we'll take care of it for you!
+        </p>
+      </div>
+
+      <div class="form-group mb-4">
+        <label>Please upload the image of the problem. (JPG/PNG preferred)</label>
+        <input
+          type="file"
+          class="form-control-file"
+          accept="image/*"
+          id="problem-photo"
+          name="file"
+        />
+      </div>
+      <div class="mb-5">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Send
+        </button>
+      </div>
+
+      <p class="text-muted text-center mt-5 mb-0">
+        © Anmol Bansal Ankit Kumar
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
       </p>
-    </div>
-
-    <div class="form-group mb-4">
-      <label>Please upload the image of the problem.</label>
-      <input type="file" class="form-control-file" accept="image/*" id="problem-photo" name="file" />
-    </div>
-    <div class="mb-5">
-      <button class="btn btn-lg btn-primary btn-block" type="submit">
-        Send
-      </button>
-    </div>
-
-    <p class="text-muted text-center mt-4">
-      © Anmol Bansal Ankit Kumar
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-    </p>
-  </form>
-</body>
-
+    </form>
+  </body>
 </html>

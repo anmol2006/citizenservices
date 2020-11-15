@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Complaint Failed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="/static/css/home.css" rel="stylesheet" /> -->
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-2 my-3">Sorry!</h1>
+      <h1 class="display-5 my-4">Your complaint could not be registered!</h1>
+      <p class="lead">
+        It looks like the image you sent us is not a problem that we can help
+        you with 😢
+      </p>
+      <!-- <hr> -->
+      <p class="mt-4 pt-5">Sent wrong image accidentally?</p>
+      <p class="lead">
+        <a class="btn btn-primary" href="{{url_for('homepage')}}" role="button"
+          >Send a different one</a
+        >
+      </p>
+    </div>
+    <footer class="mt-5 pt-5">
+      <p class="text-muted text-center mt-5">
+        © Anmol Bansal Ankit Kumar
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
+  </body>
+</html>
